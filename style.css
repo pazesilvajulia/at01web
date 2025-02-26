@@ -30,7 +30,7 @@ span{
 span:hover{
     background-color: #08447c;
     padding: 10px;
-    
+    transform: scale(1.05);
 }
 
 
