@@ -14,16 +14,19 @@ body{
     font-weight: 400; 
     font-style: normal; 
     margin: 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
 } 
 
 a{ 
 
     text-decoration: none; 
-    -webkit-text-fill-color: #3f6b94;
+    -webkit-text-fill-color: #22d5fdbd;
+ 
+} 
+
+a:hover{ 
+
+    text-decoration: none; 
+    -webkit-text-fill-color: #22d5fd;
  
 } 
 
@@ -33,7 +36,8 @@ span{
     background-color: #031a30;
     padding: 10px;
     transition: 0.3s;
-    
+    width: 150px;
+    text-align: center;
     
 }
 
@@ -41,6 +45,8 @@ span:hover{
     background-color: #08447c;
     padding: 10px;
     transform: scale(1.05);
+    -webkit-text-fill-color: #22d5fd;
+
 }
 
 
@@ -48,11 +54,21 @@ strong{
     color: #22D4FD; 
 }
 
+/*----------- IMAGES SETUP -----------*/
+
+.hand-emoji{
+    margin-top: 150px;
+    height: 9vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 
 /*----------- MAIN TEXT -----------*/
 
 .title{
-    margin: 300px 20px 0px;
+    margin: 20px 20px 0px;
 
 }
 
@@ -74,8 +90,15 @@ strong{
 /*----------- RESPONSABILIDADE -----------*/
 
 @media only screen and (max-width: 600px) {
+    
+    body{ 
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    } 
+    
     .title{
-        margin: 180px 20px 0px;
+        margin: 20px 20px 0px;
     }
 
     main{
@@ -88,6 +111,22 @@ strong{
         justify-content: center;
         text-align: center;
         width: 150px;
+
+    }
+
+    .hand-emoji{
+        margin-top: 150px;
+        height: 18vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    aside{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
     }
 
 
